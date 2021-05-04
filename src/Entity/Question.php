@@ -43,6 +43,16 @@ class Question
      */
     private $user;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isUserOnly;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $endDate;
+
 
 
 
@@ -129,5 +139,29 @@ class Question
     public function __toString()
     {
         return $this->label;
+    }
+
+    public function getIsUserOnly(): ?bool
+    {
+        return $this->isUserOnly;
+    }
+
+    public function setIsUserOnly(bool $isUserOnly): self
+    {
+        $this->isUserOnly = $isUserOnly;
+
+        return $this;
+    }
+
+    public function getEndDate(): ?\DateTimeInterface
+    {
+        return $this->endDate;
+    }
+
+    public function setEndDate(?\DateTimeInterface $endDate): self
+    {
+        $this->endDate = $endDate;
+
+        return $this;
     }
 }
