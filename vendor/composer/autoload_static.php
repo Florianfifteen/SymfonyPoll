@@ -150,6 +150,11 @@ class ComposerStaticInit5f647ad71c33e4abe5084e2e00c59a8c
             'Doctrine\\Bundle\\MigrationsBundle\\' => 33,
             'Doctrine\\Bundle\\DoctrineBundle\\' => 31,
         ),
+        'A' => 
+        array (
+            'App\\Tests\\' => 10,
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -557,9 +562,47 @@ class ComposerStaticInit5f647ad71c33e4abe5084e2e00c59a8c
         array (
             0 => __DIR__ . '/..' . '/doctrine/doctrine-bundle',
         ),
+        'App\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static $classMap = array (
+        'App\\Controller\\AnswerController' => __DIR__ . '/../..' . '/src/Controller/AnswerController.php',
+        'App\\Controller\\HomeController' => __DIR__ . '/../..' . '/src/Controller/HomeController.php',
+        'App\\Controller\\QuestionController' => __DIR__ . '/../..' . '/src/Controller/QuestionController.php',
+        'App\\Controller\\RegistrationController' => __DIR__ . '/../..' . '/src/Controller/RegistrationController.php',
+        'App\\Controller\\ResetPasswordController' => __DIR__ . '/../..' . '/src/Controller/ResetPasswordController.php',
+        'App\\Controller\\ResultController' => __DIR__ . '/../..' . '/src/Controller/ResultController.php',
+        'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
+        'App\\Controller\\UserController' => __DIR__ . '/../..' . '/src/Controller/UserController.php',
+        'App\\Entity\\Answer' => __DIR__ . '/../..' . '/src/Entity/Answer.php',
+        'App\\Entity\\Question' => __DIR__ . '/../..' . '/src/Entity/Question.php',
+        'App\\Entity\\ResetPasswordRequest' => __DIR__ . '/../..' . '/src/Entity/ResetPasswordRequest.php',
+        'App\\Entity\\Result' => __DIR__ . '/../..' . '/src/Entity/Result.php',
+        'App\\Entity\\User' => __DIR__ . '/../..' . '/src/Entity/User.php',
+        'App\\Form\\AnswerType' => __DIR__ . '/../..' . '/src/Form/AnswerType.php',
+        'App\\Form\\ChangePasswordFormType' => __DIR__ . '/../..' . '/src/Form/ChangePasswordFormType.php',
+        'App\\Form\\EditProfileType' => __DIR__ . '/../..' . '/src/Form/EditProfileType.php',
+        'App\\Form\\QuestionType' => __DIR__ . '/../..' . '/src/Form/QuestionType.php',
+        'App\\Form\\RegistrationFormType' => __DIR__ . '/../..' . '/src/Form/RegistrationFormType.php',
+        'App\\Form\\ResetPasswordRequestFormType' => __DIR__ . '/../..' . '/src/Form/ResetPasswordRequestFormType.php',
+        'App\\Form\\ResultType' => __DIR__ . '/../..' . '/src/Form/ResultType.php',
+        'App\\Form\\UserType' => __DIR__ . '/../..' . '/src/Form/UserType.php',
+        'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
+        'App\\Repository\\AnswerRepository' => __DIR__ . '/../..' . '/src/Repository/AnswerRepository.php',
+        'App\\Repository\\QuestionRepository' => __DIR__ . '/../..' . '/src/Repository/QuestionRepository.php',
+        'App\\Repository\\ResetPasswordRequestRepository' => __DIR__ . '/../..' . '/src/Repository/ResetPasswordRequestRepository.php',
+        'App\\Repository\\ResultRepository' => __DIR__ . '/../..' . '/src/Repository/ResultRepository.php',
+        'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/src/Repository/UserRepository.php',
+        'App\\Security\\EmailVerifier' => __DIR__ . '/../..' . '/src/Security/EmailVerifier.php',
+        'App\\Security\\UsersAuthenticator' => __DIR__ . '/../..' . '/src/Security/UsersAuthenticator.php',
+        'App\\Service\\PaginatorService' => __DIR__ . '/../..' . '/src/Service/PaginatorService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -642,6 +685,7 @@ class ComposerStaticInit5f647ad71c33e4abe5084e2e00c59a8c
         'Doctrine\\Common\\Annotations\\IndexedReader' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/IndexedReader.php',
         'Doctrine\\Common\\Annotations\\NamedArgumentConstructorAnnotation' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/NamedArgumentConstructorAnnotation.php',
         'Doctrine\\Common\\Annotations\\PhpParser' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/PhpParser.php',
+        'Doctrine\\Common\\Annotations\\PsrCachedReader' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/PsrCachedReader.php',
         'Doctrine\\Common\\Annotations\\Reader' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/Reader.php',
         'Doctrine\\Common\\Annotations\\SimpleAnnotationReader' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/SimpleAnnotationReader.php',
         'Doctrine\\Common\\Annotations\\TokenParser' => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations/TokenParser.php',
@@ -1626,6 +1670,7 @@ class ComposerStaticInit5f647ad71c33e4abe5084e2e00c59a8c
         'Doctrine\\Persistence\\Mapping\\Driver\\StaticPHPDriver' => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence/Mapping/Driver/StaticPHPDriver.php',
         'Doctrine\\Persistence\\Mapping\\Driver\\SymfonyFileLocator' => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence/Mapping/Driver/SymfonyFileLocator.php',
         'Doctrine\\Persistence\\Mapping\\MappingException' => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence/Mapping/MappingException.php',
+        'Doctrine\\Persistence\\Mapping\\ProxyClassNameResolver' => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence/Mapping/ProxyClassNameResolver.php',
         'Doctrine\\Persistence\\Mapping\\ReflectionService' => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence/Mapping/ReflectionService.php',
         'Doctrine\\Persistence\\Mapping\\RuntimeReflectionService' => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence/Mapping/RuntimeReflectionService.php',
         'Doctrine\\Persistence\\Mapping\\StaticReflectionService' => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Persistence/Mapping/StaticReflectionService.php',

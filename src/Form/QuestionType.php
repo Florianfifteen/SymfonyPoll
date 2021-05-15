@@ -16,10 +16,7 @@ class QuestionType extends AbstractType
         $builder
             ->add('label')
             ->add('isMultiAnswer')
-            ->add('isUserOnly')
-            ->add('endDate', DateType::class, [
-                'widget' => 'choice',
-            ]);
+            ->add('isUserOnly');
     }
 
     public function configureOptions(OptionsResolver $resolver)

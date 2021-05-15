@@ -122,6 +122,6 @@ class __TwigTemplate_01016bf7181f9446c9d53dd0a7e3098c46cd9c2913700a23437a0d810a4
 
     <h1>Mentions Légales</h1>
 
-{% endblock %}", "home/mentions.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\home\\mentions.html.twig");
+{% endblock %}", "home/mentions.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\home\\mentions.html.twig");
     }
 }

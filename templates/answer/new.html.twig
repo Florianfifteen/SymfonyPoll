@@ -1,11 +1,8 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %} {% block title %}Nouveau choix de réponse{% endblock
+%} {% block body %}
+<h1>Créer un nouveau choix de réponse pour : {{ question }}</h1>
 
-{% block title %}New Answer{% endblock %}
+{{ include("answer/_form.html.twig") }}
 
-{% block body %}
-    <h1>Create new Answer</h1>
-
-    {{ include('answer/_form.html.twig') }}
-
-    <a href="{{ path('answer_index') }}">back to list</a>
+<a href="{{ path('answer_index') }}">Revenir à la liste</a>
 {% endblock %}

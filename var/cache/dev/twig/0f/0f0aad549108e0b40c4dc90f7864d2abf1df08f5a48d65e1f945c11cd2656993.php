@@ -83,6 +83,6 @@ class __TwigTemplate_07ef1ac50b8de046e6ca4a43acd50bcf3ac0e3e4721d3f9d13624da8917
             </div>
         </div>
     </div>
-</footer>", "footer.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\footer.html.twig");
+</footer>", "footer.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\footer.html.twig");
     }
 }

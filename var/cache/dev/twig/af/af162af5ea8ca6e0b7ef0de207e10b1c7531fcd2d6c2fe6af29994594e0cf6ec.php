@@ -55,7 +55,6 @@ class __TwigTemplate_6d69f835bf1efc36d8f526e26b26aac78ae282e0ca8cb310586d82a152d
 
     }
 
-    // line 3
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -74,7 +73,7 @@ class __TwigTemplate_6d69f835bf1efc36d8f526e26b26aac78ae282e0ca8cb310586d82a152d
 
     }
 
-    // line 5
+    // line 2
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -84,59 +83,77 @@ class __TwigTemplate_6d69f835bf1efc36d8f526e26b26aac78ae282e0ca8cb310586d82a152d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "    <h1>Result index</h1>
+        // line 3
+        echo "<h1>Result index</h1>
 
-    <table class=\"table\">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        ";
+<table class=\"table\">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>User</th>
+      <th>Question label</th>
+      <th>Answer label</th>
+      <th>actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    ";
         // line 16
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["results"]) || array_key_exists("results", $context) ? $context["results"] : (function () { throw new RuntimeError('Variable "results" does not exist.', 16, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["result"]) {
             // line 17
-            echo "            <tr>
-                <td>";
-            // line 18
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["result"], "id", [], "any", false, false, false, 18), "html", null, true);
+            echo "
+    <tr>
+      <td>";
+            // line 19
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["result"], "id", [], "any", false, false, false, 19), "html", null, true);
             echo "</td>
-                <td>
-                    <a href=\"";
+      <td>";
             // line 20
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("result_show", ["id" => twig_get_attribute($this->env, $this->source, $context["result"], "id", [], "any", false, false, false, 20)]), "html", null, true);
-            echo "\">show</a>
-                    <a href=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["result"], "getUser", [], "method", false, false, false, 20), "html", null, true);
+            echo "</td>
+      <td>";
             // line 21
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("result_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["result"], "id", [], "any", false, false, false, 21)]), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["result"], "getQuestion", [], "method", false, false, false, 21), "html", null, true);
+            echo "</td>
+      <td>";
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["result"], "getAnswer", [], "method", false, false, false, 22), "html", null, true);
+            echo "</td>
+
+      <td>
+        <a href=\"";
+            // line 25
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("result_show", ["id" => twig_get_attribute($this->env, $this->source, $context["result"], "id", [], "any", false, false, false, 25)]), "html", null, true);
+            echo "\">show</a>
+        <a href=\"";
+            // line 26
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("result_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["result"], "id", [], "any", false, false, false, 26)]), "html", null, true);
             echo "\">edit</a>
-                </td>
-            </tr>
-        ";
+      </td>
+    </tr>
+    ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 25
-            echo "            <tr>
-                <td colspan=\"2\">no records found</td>
-            </tr>
-        ";
+            // line 30
+            echo "    <tr>
+      <td colspan=\"2\">no records found</td>
+    </tr>
+
+    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['result'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 29
-        echo "        </tbody>
-    </table>
+        // line 35
+        echo "  </tbody>
+</table>
 
-    <a href=\"";
-        // line 32
+<a href=\"";
+        // line 38
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("result_new");
         echo "\">Create new</a>
 ";
@@ -160,44 +177,49 @@ class __TwigTemplate_6d69f835bf1efc36d8f526e26b26aac78ae282e0ca8cb310586d82a152d
 
     public function getDebugInfo()
     {
-        return array (  140 => 32,  135 => 29,  126 => 25,  117 => 21,  113 => 20,  108 => 18,  105 => 17,  100 => 16,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  157 => 38,  152 => 35,  142 => 30,  133 => 26,  129 => 25,  123 => 22,  119 => 21,  115 => 20,  111 => 19,  107 => 17,  102 => 16,  87 => 3,  77 => 2,  36 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
+        return new Source("{% extends 'base.html.twig' %} {% block title %}Result index{% endblock %} {%
+block body %}
+<h1>Result index</h1>
 
-{% block title %}Result index{% endblock %}
+<table class=\"table\">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>User</th>
+      <th>Question label</th>
+      <th>Answer label</th>
+      <th>actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for result in results %}
 
-{% block body %}
-    <h1>Result index</h1>
+    <tr>
+      <td>{{ result.id }}</td>
+      <td>{{ result.getUser() }}</td>
+      <td>{{ result.getQuestion() }}</td>
+      <td>{{ result.getAnswer() }}</td>
 
-    <table class=\"table\">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for result in results %}
-            <tr>
-                <td>{{ result.id }}</td>
-                <td>
-                    <a href=\"{{ path('result_show', {'id': result.id}) }}\">show</a>
-                    <a href=\"{{ path('result_edit', {'id': result.id}) }}\">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan=\"2\">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+      <td>
+        <a href=\"{{ path('result_show', { id: result.id }) }}\">show</a>
+        <a href=\"{{ path('result_edit', { id: result.id }) }}\">edit</a>
+      </td>
+    </tr>
+    {% else %}
+    <tr>
+      <td colspan=\"2\">no records found</td>
+    </tr>
 
-    <a href=\"{{ path('result_new') }}\">Create new</a>
-{% endblock %}
-", "result/index.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\result\\index.html.twig");
+    {% endfor %}
+  </tbody>
+</table>
+
+<a href=\"{{ path('result_new') }}\">Create new</a>
+{% endblock %}", "result/index.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\result\\index.html.twig");
     }
 }

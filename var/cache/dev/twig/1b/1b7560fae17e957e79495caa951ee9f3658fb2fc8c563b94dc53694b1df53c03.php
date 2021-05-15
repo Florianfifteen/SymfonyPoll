@@ -94,6 +94,6 @@ class __TwigTemplate_0f4bebefd721b1ab840f6e89ad78d221d786305df1f3b73c0a492156a1b
 <p>
     Cheers!
 </p>
-", "registration/confirmation_email.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\registration\\confirmation_email.html.twig");
+", "registration/confirmation_email.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\registration\\confirmation_email.html.twig");
     }
 }

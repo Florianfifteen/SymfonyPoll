@@ -133,6 +133,6 @@ class __TwigTemplate_6b108f01f45828c80594eae361990a2ef78602595f870dd23a403b87111
 
     <a href=\"{{ path('result_index') }}\">back to list</a>
 {% endblock %}
-", "result/new.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\result\\new.html.twig");
+", "result/new.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\result\\new.html.twig");
     }
 }

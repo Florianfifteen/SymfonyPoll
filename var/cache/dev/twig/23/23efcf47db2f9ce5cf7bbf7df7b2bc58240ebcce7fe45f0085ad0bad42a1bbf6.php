@@ -79,6 +79,6 @@ class __TwigTemplate_9196b54390c9f50bc7a9a0a491506c923aa51a513eedff309fa8c34f234
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ result.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "result/_delete_form.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\result\\_delete_form.html.twig");
+", "result/_delete_form.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\result\\_delete_form.html.twig");
     }
 }

@@ -139,6 +139,6 @@ class __TwigTemplate_d05be092b9b11abe05015a4a41fb48add4b8e99bd5ee7a1a676f209c89a
 
 </div>
     
-{% endblock %}", "user/editprofile.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\user\\editprofile.html.twig");
+{% endblock %}", "user/editprofile.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\user\\editprofile.html.twig");
     }
 }

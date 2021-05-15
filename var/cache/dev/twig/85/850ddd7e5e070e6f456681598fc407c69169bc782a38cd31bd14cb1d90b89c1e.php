@@ -269,6 +269,6 @@ class __TwigTemplate_78469d9332531e28d06fee94909bcb0646128f09f2d76575cb45e6395d1
         Start Bootstrap
     </div>
     {% endif %}
-</nav>", "left-navbar.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\left-navbar.html.twig");
+</nav>", "left-navbar.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\left-navbar.html.twig");
     }
 }

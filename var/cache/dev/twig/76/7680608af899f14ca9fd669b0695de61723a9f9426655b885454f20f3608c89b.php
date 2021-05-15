@@ -172,6 +172,6 @@ class __TwigTemplate_4ad3561f17a0b5aaf130e637da9e5293d4d131403de0cdb05e7af7fa57c
         <button type=\"submit\" class=\"btn\">Register</button>
     {{ form_end(registrationForm) }}
 {% endblock %}
-", "registration/register.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\registration\\register.html.twig");
     }
 }

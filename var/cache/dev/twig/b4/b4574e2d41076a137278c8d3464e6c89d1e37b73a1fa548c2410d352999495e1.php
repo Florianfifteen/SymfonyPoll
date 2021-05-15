@@ -255,6 +255,6 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     <script src=\"{{ asset('js/scripts.js') }}\"></script>
 </body>
 
-</html>", "base.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\PollsSymfony\\Poll\\templates\\base.html.twig");
+</html>", "base.html.twig", "D:\\Users\\flo59\\Documents\\ETUDE\\LP_DIM\\SymfonyPoll\\templates\\base.html.twig");
     }
 }

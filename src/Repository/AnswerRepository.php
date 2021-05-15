@@ -48,7 +48,6 @@ class AnswerRepository extends ServiceEntityRepository
     }
     */
 
-
     function haveAlreadyAnswered($id, $ip)
     {
         return false;
